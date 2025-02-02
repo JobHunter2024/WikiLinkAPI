@@ -38,11 +38,6 @@ wiki_link_bp = Blueprint('wiki_link', __name__)
                         "example": "http://www.semanticweb.org/ana/ontologies/2024/10/JobHunterOntology#.NET",
                         "description": "IRI of the ontology entity."
                     },
-                    "wikidata_uri": {
-                        "type": "string",
-                        "example": "https://en.wikipedia.org/wiki/.NET",
-                        "description": "Wikidata URI corresponding to the entity."
-                    },
                     "wikipedia_url": {
                         "type": "string",
                         "example": "https://en.wikipedia.org/wiki/.NET",
@@ -89,7 +84,7 @@ def get_info():
 
     return jsonify({
         "ontology_iri": iri,
-        "wikidata_uri": wikipedia_url,
+        "wikipedia_url": wikipedia_url,
         "logo_url": logo_url,
         "description": description
     })
