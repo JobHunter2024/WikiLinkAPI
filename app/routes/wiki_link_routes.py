@@ -90,7 +90,6 @@ def get_info():
     return jsonify({
         "ontology_iri": iri,
         "wikidata_uri": wikipedia_url,
-        "wikipedia_url": wikipedia_url,
         "logo_url": logo_url,
         "description": description
     })
